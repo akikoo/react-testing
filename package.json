@@ -1,0 +1,24 @@
+{
+  "name": "react-testing-mocha-jsdom-unexpected",
+  "version": "0.0.1",
+  "description": "Unit testing React components with Mocha, jsdom and unexpected",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register --recursive"
+  },
+  "author": "Aki Karkkainen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akikoo/react-unit-testing"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
+  },
+  "devDependencies": {
+    "babel": "^5.6.14",
+    "jsdom": "^3.1.2",
+    "mocha": "^2.2.5",
+    "react-tools": "^0.13.3",
+    "unexpected": "^9.2.1"
+  }
+}
