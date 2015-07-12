@@ -8,17 +8,17 @@ var ButtonComponent = require('../components/Button');
 describe('ButtonComponent', () => {
   it('Should render a button element', () => {
     var instance = ReactTestUtils.renderIntoDocument(<ButtonComponent />);
-    expect(instance.getDOMNode().nodeName, 'to be', 'BUTTON');
+    expect(React.findDOMNode(instance).nodeName, 'to be', 'BUTTON');
   });
 
   it('Should render a button element with button classes', () => {
     var instance = ReactTestUtils.renderIntoDocument(<ButtonComponent />);
-    expect(instance.getDOMNode().className, 'to contain', 'btn btn--primary');
+    expect(React.findDOMNode(instance).className, 'to contain', 'btn btn--primary');
   });
 
   it('<button> should be of type "button"', () => {
     var instance = ReactTestUtils.renderIntoDocument(<ButtonComponent />);
-    expect(instance.getDOMNode().getAttribute('type'), 'to be', 'button');
+    expect(React.findDOMNode(instance).getAttribute('type'), 'to be', 'button');
   });
 
   it('Should contain a value', () => {
