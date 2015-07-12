@@ -23,9 +23,6 @@ describe('ButtonComponent', () => {
 
   it('Should contain a value', () => {
     var instance = ReactTestUtils.renderIntoDocument(<ButtonComponent />);
-    // expect(instance.getDOMNode().innerText.trim(), 'to be', 'Send');
-    // expect(React.findDOMNode(instance).innerHTML, 'to contain', 'Send');
-    // expect(React.findDOMNode(instance).innerText, 'to contain', 'Send');
     expect(React.findDOMNode(instance).innerHTML, 'to be', 'Send');
   });
 });
