@@ -3,6 +3,8 @@
 var React = require('react/addons');
 var expect = require('unexpected');
 var ReactTestUtils = React.addons.TestUtils;
+var sinon = require('sinon');
+
 var ButtonComponent = require('../components/Button');
 
 describe('ButtonComponent', () => {
