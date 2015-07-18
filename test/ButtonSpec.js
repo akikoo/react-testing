@@ -1,30 +1,40 @@
 'use strict';
 
 var React = require('react/addons');
-var expect = require('unexpected');
 var ReactTestUtils = React.addons.TestUtils;
 var sinon = require('sinon');
-
+var expect = require('unexpected').clone();
 var ButtonComponent = require('../components/Button');
 
+expect.installPlugin(require('unexpected-sinon'));
+
 describe('ButtonComponent', () => {
-  it('Should render a button element', () => {
+  it('should render a button element', () => {
     var instance = ReactTestUtils.renderIntoDocument(<ButtonComponent />);
     expect(React.findDOMNode(instance).nodeName, 'to be', 'BUTTON');
   });
 
-  it('Should render a button element with button classes', () => {
+  it('should have button class "btn"', () => {
     var instance = ReactTestUtils.renderIntoDocument(<ButtonComponent />);
-    expect(React.findDOMNode(instance).className, 'to contain', 'btn btn--primary');
+    expect(React.findDOMNode(instance).className, 'to contain', 'btn');
   });
 
-  it('<button> should be of type "button"', () => {
+  it('should be of type "button"', () => {
     var instance = ReactTestUtils.renderIntoDocument(<ButtonComponent />);
     expect(React.findDOMNode(instance).getAttribute('type'), 'to be', 'button');
   });
 
-  it('Should contain a value', () => {
+  it('should contain a value', () => {
     var instance = ReactTestUtils.renderIntoDocument(<ButtonComponent />);
-    expect(React.findDOMNode(instance).innerHTML, 'to be', 'Send');
+    expect(React.findDOMNode(instance).textContent, 'to be', 'Send');
+  });
+
+  it('should call onClick callback', () => {
+    var callback = sinon.spy();
+    var instance = ReactTestUtils.renderIntoDocument(<ButtonComponent value="Send" onClick={callback} />);
+    var node = React.findDOMNode(instance);
+
+    ReactTestUtils.Simulate.click(node);
+    expect(callback, 'was called');
   });
 });
