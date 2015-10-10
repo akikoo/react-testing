@@ -2,6 +2,8 @@
 
 This is just a quick basic setup of the above mentioned libraries. 
 
+[![Build Status](https://travis-ci.org/akikoo/react-testing.svg?branch=master)](https://travis-ci.org/akikoo/react-testing)
+
 ## Environment setup 
 
 ```sh
