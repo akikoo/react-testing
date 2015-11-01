@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Unit testing React components with Mocha, jsdom and unexpected",
   "scripts": {
-    "test": "mocha --compilers js:babel/register --recursive"
+    "test": "mocha --compilers js:babel-core/register --recursive"
   },
   "author": "Aki Karkkainen",
   "license": "MIT",
@@ -20,8 +20,8 @@
     "babel": "^6.0.14",
     "jsdom": "^7.0.0",
     "mocha": "^2.3.3",
+    "sinon": "^1.17.1",
     "unexpected": "^10.0.1",
-    "unexpected-sinon": "^8.0.0",
-    "sinon": "^1.17.1"
+    "unexpected-sinon": "^8.0.0"
   }
 }
