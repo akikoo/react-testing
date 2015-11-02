@@ -14,7 +14,7 @@
   "dependencies": {
     "react": "^0.14.0",
     "react-addons-test-utils": "^0.14.0",
-    "react-dom": "^0.14.0"
+    "react-dom": "^0.14.2"
   },
   "devDependencies": {
     "babel": "^6.0.14",
