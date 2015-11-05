@@ -1,0 +1,3 @@
+./test/**/*Spec.js
+--require test/utils/dom.js
+--require babel-core/register
