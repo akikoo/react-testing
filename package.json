@@ -23,7 +23,7 @@
     "jsdom": "^9.2.1",
     "mocha": "^3.0.0",
     "sinon": "^1.17.1",
-    "unexpected": "^10.0.1",
+    "unexpected": "^10.18.0",
     "unexpected-sinon": "^10.1.1"
   }
 }
