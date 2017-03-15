@@ -22,7 +22,7 @@
     "babel-preset-react": "^6.16.0",
     "jsdom": "^9.8.2",
     "mocha": "^3.0.0",
-    "sinon": "^1.17.1",
+    "sinon": "^2.0.0",
     "unexpected": "^10.18.0",
     "unexpected-sinon": "^10.1.1"
   }
