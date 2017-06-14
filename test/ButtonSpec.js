@@ -2,7 +2,7 @@
 
 var React = require('react');
 var ReactDOM = require('react-dom');
-var ReactTestUtils = require('react-addons-test-utils');
+var ReactTestUtils = require('react-dom/test-utils');
 var sinon = require('sinon');
 var expect = require('unexpected').clone();
 var ButtonComponent = require('../components/Button');
