@@ -12,9 +12,8 @@
     "url": "https://github.com/akikoo/react-unit-testing"
   },
   "dependencies": {
-    "react": "^15.0.2",
-    "react-addons-test-utils": "^15.0.2",
-    "react-dom": "^15.0.2"
+    "react": "^15.6.0",
+    "react-dom": "^15.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.16.0",
