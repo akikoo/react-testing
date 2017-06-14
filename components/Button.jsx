@@ -1,15 +1,9 @@
 'use strict';
 
 var React = require('react');
-var ReactDOM = require('react-dom');
+var PropTypes = require('prop-types');
 
 var Button = React.createClass({
-  propTypes: {
-    type: React.PropTypes.string,
-    value: React.PropTypes.string.isRequired,
-    onClick: React.PropTypes.func
-  },
-
   getDefaultProps() {
     return {
       type: 'button',
@@ -30,5 +24,11 @@ var Button = React.createClass({
     );
   }
 });
+
+Button.propTypes = {
+  type: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  onClick: PropTypes.func
+};
 
 module.exports = Button;

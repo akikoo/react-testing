@@ -12,6 +12,7 @@
     "url": "https://github.com/akikoo/react-unit-testing"
   },
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react": "^15.6.0",
     "react-dom": "^15.6.0"
   },
