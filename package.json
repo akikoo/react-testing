@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "prop-types": "^15.5.10",
-    "react": "^15.6.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.0.0",
+    "react-dom": "^15.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.16.0",
