@@ -12,9 +12,9 @@
     "url": "https://github.com/akikoo/react-unit-testing"
   },
   "dependencies": {
-    "prop-types": "^15.5.10",
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^15.6.0"
+    "react-dom": "^16.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.16.0",
@@ -23,7 +23,7 @@
     "jsdom": "^11.0.0",
     "mocha": "^4.0.0",
     "sinon": "^4.0.0",
-    "unexpected": "^10.18.0",
+    "unexpected": "^10.36.0",
     "unexpected-sinon": "^10.1.1"
   }
 }
